@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">갤러리</string>
+    <string name="app_name2">명화</string>
+
+    <string name="title1">starry Night</string>
+    <string name="artist1">고흐</string>
+    <string name="picture1">starry_night</string>
+
+    <string name="title2">still life with Kettle</string>
+    <string name="artist2">폴 세찬</string>
+    <string name="picture2">still_life_with_kettle</string>
+</resources>
