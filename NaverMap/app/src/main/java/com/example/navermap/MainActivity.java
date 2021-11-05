@@ -90,6 +90,9 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(@NonNull NaverMap naverMap) {
         // 지도 유형
         naverMap.setMapType(NaverMap.MapType.Basic);
+        // naverMap.setMapType(NaverMap.MapType.Satellite);
+        // naverMap.setMapType(NaverMap.MapType.Hybrid);
+        // naverMap.setMapType(NaverMap.MapType.Terrain);
 
         // 심벌 크기
         naverMap.setSymbolScale(1.5f);
