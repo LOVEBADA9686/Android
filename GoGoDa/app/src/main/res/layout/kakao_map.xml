@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/kewordsearch"
+        android:layout_width="261dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/newgeo"
+        android:layout_alignBottom="@+id/newgeo"
+        android:background="@color/white"
+        android:hint="주소검색">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/newgeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/kakao_list"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="61dp"
+        android:text="검색"></Button>
+    <Button
+        android:id="@+id/kakao_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="목록">
+    </Button>
+
+    <Button
+        android:id="@+id/nowgeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="현위치"></Button>
+
+    <Button
+        android:id="@+id/defaultgeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="100dp"
+        android:text="회원주소"></Button>
+
+
+</RelativeLayout>

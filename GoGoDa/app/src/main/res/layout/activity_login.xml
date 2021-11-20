@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "380dp"
+    android:layout_height = "wrap_content"
+    android:layout_gravity = "center"
+    android:orientation = "horizontal">
+
+    <LinearLayout
+        android:layout_width = "250dp"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical">
+
+        <EditText
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "아 이 디"
+            android:id="@+id/login_id" />
+
+        <EditText
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "비밀번호"
+            android:inputType="textPassword"
+            android:id="@+id/login_pw" />
+        <LinearLayout
+            android:layout_width = "250dp"
+            android:layout_height = "wrap_content"
+            android:orientation = "horizontal">
+
+            <Button
+                android:id="@+id/id_btn"
+                android:layout_width = "105dp"
+                android:background="@drawable/button"
+                android:layout_height = "match_parent"
+                android:text = "ID 찾기"
+                android:textStyle="bold"
+                android:onClick="id_sch"/>
+
+            <Button
+                android:id="@+id/pw_btn"
+                android:layout_width = "105dp"
+                android:background="@drawable/button"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold"
+                android:layout_height = "match_parent"
+                android:text = "PW 찾기"
+                android:onClick="pw_sch"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width = "130dp"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:onClick="login_btn"
+            android:textColor="#ffffff"
+            android:background="@drawable/button"
+            android:textStyle="bold"
+            android:text="로그인" />
+
+        <Button
+            android:id="@+id/login_join_btn"
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button"
+            android:layout_alignParentLeft="true"
+            android:onClick="join_btn"
+            android:textStyle="bold"
+            android:text="회원가입" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

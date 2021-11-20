@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.ReviewSelect">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <TableRow
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_span="2">
+
+                <TextView
+                    android:id="@+id/renicknameSel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="8"
+                    android:hint="작성자"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RatingBar
+                    android:id="@+id/reratingSel"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/repassSel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:layout_marginLeft="10dp"
+                    android:hint="등록 날짜"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/img_proff"
+                android:layout_width="297dp"
+                android:layout_height="250dp"
+                android:layout_span="1" />
+
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+                <TextView
+                    android:id="@+id/recontentSel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_weight="8"
+                    android:hint="내용"
+                    android:textSize="30dp"
+                    android:layout_span="2"/>
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</LinearLayout>

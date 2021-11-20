@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BrownPoodle</string>
+    <string name="Login">로그인</string>
+    <string name="menu">메뉴</string>
+    <string name="login_str">로그인</string>
+    <string name="walk_str">산책</string>
+</resources>

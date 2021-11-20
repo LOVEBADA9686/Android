@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/00.KOSMO93/40.Android/brownpoodle_walkLogin/app/src/main/res/layout/activity_login_main.xml" value="0.2046875" />
+        <entry key="..\:/00.KOSMO93/40.Android/brownpoodle_walkLogin/app/src/main/res/layout/activity_walk_recorded.xml" value="0.2046875" />
+        <entry key="..\:/00.KOSMO93/40.Android/brownpoodle_walkLogin/app/src/main/res/menu/toolbar_menu.xml" value="0.2046875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

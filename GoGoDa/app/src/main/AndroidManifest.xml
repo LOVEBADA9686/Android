@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="g.g.d.com">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gogoda_logo"
+        android:label="GoGoDa"
+        android:roundIcon="@drawable/gogoda_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Login"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".VMovie"></activity>
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="0WNBUK1f60vTSQAnUor_" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="63a9f520f66dd0ab06fff83de871120a"/>
+
+        <activity android:name=".Emotion" />
+        <activity android:name=".Search" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="g.g.d.com.map.KakaoMap"/>
+        <activity android:name="g.g.d.com.map.KakaoList"/>
+        <activity android:name="g.g.d.com.view.ReviewSelectAll" />
+        <activity android:name="g.g.d.com.view.ReviewInsert" />
+        <activity android:name="g.g.d.com.view.ReviewSelect" />
+        <activity android:name="g.g.d.com.view.ReviewSelectUD" />
+        <activity android:name="g.g.d.com.view.ReviewNull"/>
+        <activity android:name="g.g.d.com.member.MemberActivity"/>
+        <activity android:name="g.g.d.com.member.WebViewActivity"/>
+        <activity android:name=".board.BoardListView"/>
+        <activity android:name=".board.BoardWrite"/>
+        <activity android:name=".board.RboardActivity"/>
+    </application>
+
+</manifest>

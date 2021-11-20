@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".board.RboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="게시글 상세 페이지"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/black" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="4dp"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_inside"
+                    android:gravity="center"
+                    android:text="글번호"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/bnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="B0001"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_inside"
+                    android:gravity="center"
+                    android:text="작성자"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/bname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="황영석"
+                    android:textSize="20sp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_inside"
+                    android:gravity="center"
+                    android:text="등록일자"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/binsertdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="5"
+                    android:gravity="center"
+                    android:text="2021-02-25"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_inside"
+                    android:gravity="center"
+                    android:text="제목"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/bsubject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="5"
+                    android:gravity="center"
+                    android:text="안드로이드 어려워"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_inside"
+                    android:gravity="center"
+                    android:text="내용"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/bcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="5"
+                    android:text="졸려 ㅠㅠ"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+
+            <ImageView
+                android:id="@+id/bfile"
+                android:src="@drawable/gogoda" />
+
+        </TableLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="목록" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="댓글"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black" />
+
+                <EditText
+                    android:id="@+id/rbname"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="작성자" />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/rbcontent"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:hint="댓글을 입력하세요" />
+
+                    <Button
+                        android:id="@+id/rb_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="작성" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/rboard_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:divider="#999999"
+                    android:dividerHeight="1dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
